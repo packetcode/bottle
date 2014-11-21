@@ -1,0 +1,221 @@
+
+/* Body */
+	body { background: #fff; color: #444; margin:0px;
+			font: 14px/21px;font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;}
+
+/* Typography */
+	p { margin: 0 0 20px 0; }
+	strong { font-weight: bold; color: #333; }
+	small { font-size: 80%; color:#B8B8B8 ; }
+	hr { border: solid #ddd; border-width: 1px 0 0; clear: both; margin: 10px 0 10px; height: 0; }
+
+	h1{ font-size:35px; line-height: 40px; }
+	h2{ font-size:30px; line-height: 35px; }
+	h3{ font-size:25px; line-height: 30px; }
+	h4{ font-size:20px; line-height: 23px; }
+	h5{ font-size:16px; line-height: 18px; }
+	h6{ font-size:14px; line-height: 16px; }
+
+
+/* Links */
+	a, a:visited { color: #333; text-decoration: none; outline: 0; }
+	a:hover, a:focus { color: #000; }
+	p a, p a:visited { line-height: inherit; }
+
+/* Table */
+	.table{ padding: 10px 0px; width:100%; border-collapse: collapse; text-align: left; }
+	.table th{ background: #F2F1EF;font-size: 14px;font-weight: normal;
+				color: #22313F; padding: 10px 8px; border-bottom: 2px solid #D2D7D3;}
+	.table td{ color: #22313F;padding: 9px 8px 0px 8px; border-bottom: 1px solid #D2D7D3;}
+	.table tbody tr:hover td{ color:#6C7A89;}
+
+/* Elements */
+	.well{ background: #F8f8f8; padding: 10px; border-radius: 10px; border-bottom: 5px solid #EEEEEE;border-right:2px solid #EEEEEE;}	
+	.box{ border:2px solid #EEEEEE; border-radius: 5px; padding: 10px;}
+
+/* button */
+	.btn{
+	    padding: 8px 15px;color: #FFF;background: #3498db;	
+	    -webkit-border-radius: 4px;-moz-border-radius: 4px;border-radius: 4px;
+	    cursor: pointer;border: solid 0px transparent; }
+	.btn:hover { opacity:0.9;}
+
+/* input */
+	fieldset{ border: 2px solid #EEEEEE;padding: 20px; }
+	input[type="text"], 
+	input[type="password"],
+	textarea,
+	select{
+	border:0; padding:8px; font-size:1em; color:#34495e; border:solid 1px #ccc; margin:5px 0 5px; 
+	-webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px;}
+	textarea{ font-size: 1.4em;}
+
+
+/*grid */
+
+	.brow {	margin:0px auto; word-wrap: break-word;clear: both;	}
+	.bcol-10{ width:10%; }
+	.bcol-15{ width:15%; }
+	.bcol-20{ width:20%; }
+	.bcol-25{ width:25%; }
+	.bcol-30{ width:30%; }
+	.bcol-33{ width:33.3%; }
+	.bcol-40{ width:40%; }
+	.bcol-50{ width:50%; }
+	.bcol-60{ width:60%; }
+	.bcol-66{ width:66.7%; }
+	.bcol-70{ width:70%; }
+	.bcol-75{ width:75%; }
+	.bcol-80{ width:80%; }
+	.bcol-85{ width:85%; }
+	.bcol-90{ width:90%; }
+	.bcol-100{ width:99.5%; }
+
+	.brow:after {content: "";display: table;clear: both;}
+	[class*='bcol-'] { float: left; }
+
+/** 
+ ** BOTTLE COLORS
+ ** - Background colors 
+ ** - Text colors
+ */
+
+/* ---- START BG COLORS --- */
+	/* Red */
+	.bg-dp-lt-red{ background: #EC403A}
+	.bg-lt-red{ background: #E2312B}
+	.bg-red{ background: #D91E18}
+	.bg-dk-red{ background: #CC1D17}
+	.bg-dp-dk-red{ background: #BF1B16}
+	/*Blue*/
+	.bg-dp-lt-blue{ background: #5F9DEC}
+	.bg-lt-blue{ background: #5191E2}
+	.bg-blue{ background: #4183D7}
+	.bg-dk-blue{ background: #3577CB}
+	.bg-dp-dk-blue{ background: #296ABC}
+	 /*Green*/
+	.bg-dp-lt-green{ background: #3CBE72}
+	.bg-lt-green{ background: #30B065}
+	.bg-green{ background: #26A65B}
+	.bg-dk-green{ background: #1C974F}
+	.bg-dp-dk-green{ background: #148945}
+	/*Orange*/
+	.bg-dp-lt-orange{ background: #F99829}
+	.bg-lt-orange{ background: #ED8916}
+	.bg-orange{ background: #E87E04}
+	.bg-dk-orange{ background: #DB7703}
+	.bg-dp-dk-orange{ background: #D27102}
+	/*Brown*/
+	.bg-dp-lt-brown{ background: #825550}
+	.bg-lt-brown{ background: #81463F}
+	.bg-brown{ background: #803F37}
+	.bg-dk-brown{ background: #6E251C}
+	.bg-dp-dk-brown{ background: #59221B}
+	/*Pink*/
+	.bg-dp-lt-pink{ background: #F8557E}
+	.bg-lt-pink{ background: #F73768}
+	.bg-pink{ background: #F62459}
+	.bg-dk-pink{ background: #EA184D}
+	.bg-dp-dk-pink{ background: #E10B41}
+	/*Yellow*/
+	.bg-dp-lt-yellow{ background: #FBCC5F}
+	.bg-lt-yellow{ background: #FAC54D}
+	.bg-yellow{ background: #F9BF3B}
+	.bg-dk-yellow{ background: #FABA27}
+	.bg-dp-dk-yellow{ background: #F5B115}
+	/*Voilet*/
+	.bg-dp-lt-voilet{ background: #9663AB}
+	.bg-lt-voilet{ background: #9254AC}
+	.bg-voilet{ background: #8E44AD}
+	.bg-dk-voilet{ background: #8237A1}
+	.bg-dp-dk-voilet{ background: #71298F}
+	/*Ash*/
+	.bg-dp-lt-ash{ background: #9AA3AC}
+	.bg-lt-ash{ background: #828D99}
+	.bg-ash{ background: #6C7A89}
+	.bg-dk-ash{ background: #616D7A}
+	.bg-dp-dk-ash{ background: #55606C}
+	/*Black*/
+	.bg-dp-lt-black{ background: #374858}
+	.bg-lt-black{ background: #2E3E4E}
+	.bg-black{ background: #22313F}
+	.bg-dk-black{ background: #182530}
+	.bg-dp-dk-black{ background: #0D151C}
+	/*White*/
+	.bg-dp-lt-white{ background: #FEFEFE}
+	.bg-lt-white{ background: #F8F8F8}
+	.bg-white{ background: #f0f0f0}
+	.bg-dk-white{ background: #EAEAEA}
+	.bg-dp-dk-white{ background: #E0E0E0}
+/* ---- END BG COLORS ------- */
+
+/* ---- START TX COLORS --- */
+	/* Red */
+	.tx-dp-lt-red{ color: #EC403A}
+	.tx-lt-red{ color: #E2312B}
+	.tx-red{ color: #D91E18}
+	.tx-dk-red{ color: #CC1D17}
+	.tx-dp-dk-red{ color: #BF1B16}
+	/*Blue*/
+	.tx-dp-lt-blue{ color: #5F9DEC}
+	.tx-lt-blue{ color: #5191E2}
+	.tx-blue{ color: #4183D7}
+	.tx-dk-blue{ color: #3577CB}
+	.tx-dp-dk-blue{ color: #296ABC}
+	 /*Green*/
+	.tx-dp-lt-green{ color: #3CBE72}
+	.tx-lt-green{ color: #30B065}
+	.tx-green{ color: #26A65B}
+	.tx-dk-green{ color: #1C974F}
+	.tx-dp-dk-green{ color: #148945}
+	/*Orange*/
+	.tx-dp-lt-orange{ color: #F99829}
+	.tx-lt-orange{ color: #ED8916}
+	.tx-orange{ color: #E87E04}
+	.tx-dk-orange{ color: #DB7703}
+	.tx-dp-dk-orange{ color: #D27102}
+	/*Brown*/
+	.tx-dp-lt-brown{ color: #825550}
+	.tx-lt-brown{ color: #81463F}
+	.tx-brown{ color: #803F37}
+	.tx-dk-brown{ color: #6E251C}
+	.tx-dp-dk-brown{ color: #59221B}
+	/*Pink*/
+	.tx-dp-lt-pink{ color: #F8557E}
+	.tx-lt-pink{ color: #F73768}
+	.tx-pink{ color: #F62459}
+	.tx-dk-pink{ color: #EA184D}
+	.tx-dp-dk-pink{ color: #E10B41}
+	/*Yellow*/
+	.tx-dp-lt-yellow{ color: #FBCC5F}
+	.tx-lt-yellow{ color: #FAC54D}
+	.tx-yellow{ color: #F9BF3B}
+	.tx-dk-yellow{ color: #FABA27}
+	.tx-dp-dk-yellow{ color: #F5B115}
+	/*Voilet*/
+	.tx-dp-lt-voilet{ color: #9663AB}
+	.tx-lt-voilet{ color: #9254AC}
+	.tx-voilet{ color: #8E44AD}
+	.tx-dk-voilet{ color: #8237A1}
+	.tx-dp-dk-voilet{ color: #71298F}
+	/*Ash*/
+	.tx-dp-lt-ash{ color: #9AA3AC}
+	.tx-lt-ash{ color: #828D99}
+	.tx-ash{ color: #6C7A89}
+	.tx-dk-ash{ color: #616D7A}
+	.tx-dp-dk-ash{ color: #55606C}
+	/*Black*/
+	.tx-dp-lt-black{ color: #374858}
+	.tx-lt-black{ color: #2E3E4E}
+	.tx-black{ color: #22313F}
+	.tx-dk-black{ color: #182530}
+	.tx-dp-dk-black{ color: #0D151C}
+	/*White*/
+	.tx-dp-lt-white{ color: #FEFEFE}
+	.tx-lt-white{ color: #F8F8F8}
+	.tx-white{ color: #f0f0f0}
+	.tx-dk-white{ color: #EAEAEA}
+	.tx-dp-dk-white{ color: #E0E0E0}
+/* ---- END TX COLORS ------- */
+
+
