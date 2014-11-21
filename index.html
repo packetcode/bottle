@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="Krishna Teja G S">
-	  <meta name="keywords" content="bottle css, stylesheet, css framework">
+	<meta name="keywords" content="bottle css, stylesheet, css framework">
     <title>Bottle CSS</title>
     <link rel="stylesheet" href="bottle.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css" rel="stylesheet">
@@ -21,7 +21,8 @@
     <p>I love bootsrap css, foundation css and even pure css, but what i found is they are
     little heavy for most of my applications and have become very much routeen in most web apps and so i got bored. Here is my css sheet which is minimal, im trying to keep only  frequently used elements. Try it and do give your feedback :) This code is licenced under GNU GPL V2. </p>
   </div>
-    <div class="well"><h2>Grid<h2></div>
+    <div class="well"><h2>Grid</h2></div>
+    <p>Grids make it easy to make columns in the page and split the content neatly over the webpage. Unlike other frameowrks i dint use any gutter space, i kept it tight without any padding which are fluid in nature.</p>
     <!--- Grid Layout -->
      <div class="brow">
       <div class="bcol-10 shade-a"><div class="grid-item">.bcol-10</div></div>
@@ -81,6 +82,26 @@
       <div class="bcol-50 shade-a"><div class="grid-item">.bcol-50</div></div>
       <div class="bcol-50 shade-b"><div class="grid-item">.bcol-50</div></div>
     </div>
+
+    <div class="example" rel="Example #1">
+     <div class="brow">
+      <div class="bcol-20"><div class="image">
+      </div></div>
+      <div class="bcol-80"><div class="content">
+      <h4>Hello !</h4>
+      	<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+      </div></div>
+    </div>
+    </div>
+    <pre rel="Code #1"><code>
+    &lt;div class="brow">
+      &lt;div class="bcol-20">&lt;div class="image">&lt;/div>&lt;/div>
+      &lt;div class="bcol-80">&lt;div class="content">
+     	 &lt;h4>Hello !&lt;/h4>
+      	&lt;p>Pellentesque habitant .... leo&lt;/p>
+      &lt;/div>&lt;/div>
+    &lt;/div>
+    </code></pre>
     <h2 class="well">Typography<h2>
     <h1>Heading 1 &lt;h1&gt;</h1>
     <h2>Heading 2 &lt;h2&gt;</h2>
@@ -88,7 +109,14 @@
     <h4>Heading 4 &lt;h4&gt;</h4>
     <h5>Heading 5 &lt;h5&gt;</h5>
     <h6>Heading 6 &lt;h6&gt;</h6>
-
+     <pre rel="Code #2"><code>
+    &lt;h1> Heading 1 &lt;/h1>
+    &lt;h2> Heading 2 &lt;/h2>
+    &lt;h3> Heading 3 &lt;/h3>
+    &lt;h4> Heading 4 &lt;/h4>
+    &lt;h5> Heading 5 &lt;/h5>
+    &lt;h6> Heading 6 &lt;/h6>
+    </code></pre>
     <h2 class="well">Tables</h2>
     <table class="table">
       <thead>
@@ -120,71 +148,124 @@
         </tr>
       </tbody>
     </table>
-
+     <pre rel="Code #3"><code>
+    &lt;table class="table">
+      &lt;thead>
+        &lt;tr>
+          &lt;th> Column 1 &lt;/th>
+          &lt;th> Column 2 &lt;/th>
+          &lt;th> Column 3 &lt;/th>
+          &lt;th> Column 4 &lt;/th>
+        &lt;/tr>
+      &lt;/thead>
+      &lt;tbody>
+        &lt;tr>
+          &lt;td> row11 &lt;/td>
+          &lt;td> row12 &lt;/td>
+          &lt;td> row13 &lt;/td>
+          &lt;td> row14 &lt;/td>
+        &lt;/tr>
+      &lt;/tbody>
+    &lt;/table>
+    </code></pre>
    
     <h2 class="well">Forms</h2>
-<!-- Form Elements -->
-<form action="" method="get">
-  <fieldset>
-    <legend >Example form</legend>
+	<!-- Form Elements -->
 
       <!-- Input[type=text] -->
-      <label for="name">Name</label>
-      <input type="text" id="name" cols="60" placeholder="Enter your name"><br>
+      <label ><b>Textbox</b></label><br>
+      <input type="text" cols="60" placeholder="sample textbox"><br><br>
 
       <!-- Selectbox -->
-      <label for="age">Age</label>
-      <select class="col" name="age" id="age">
-        <optgroup label="Please choose your age">
-        <option value="18">18</option>
-        <option value="19">19</option>
-      </select><br>
+      <label ><b>Selectbox</b></label><br>
+      <select >
+        <optgroup label="Please choose your option">
+        <option value="option1">option1</option>
+        <option value="option2">option2</option>
+      </select><br><br>
 
       <!-- Radio -->
-      <strong class="font-normal block">What is your gender?</strong>
-      <span class="checkbox">
-        <input type="radio" name="gender" id="male">
-        <label for="male">Male</label>
-        <input type="radio" name="gender" id="female">
-        <label for="female">Female</label>
-      </span><br>
+      <label><b>Radio buttons</b></label><br>
+      <span >
+        <input type="radio" name='radio'>
+        <label for="radio1">radio1</label>
+        <input type="radio" name='radio'>
+        <label for="radio2">radio2</label>
+      </span><br><br>
 
-      <!-- For multi-line checkboxes / radios, a parent .checkbox element must be wrapped -->
-      <strong class="font-normal block">What you like?</strong>
-      <span class="checkbox">
-        <input type="checkbox" id="sports" name="sports">
-        <label for="sports">Sports</label>
-        <input type="checkbox" id="music" name="music">
-        <label for="music">Music</label>
-      </span><br>
+      <!-- Checkbox -->
+      <label ><b>Checkbox</b></label><br>
+      <span >
+        <input type="checkbox" name="checkbox">
+        <label for="check1">check1</label>
+        <input type="checkbox" name="checkbox">
+        <label for="check2">check2</label>
+      </span><br><br>
 
       <!-- Textarea -->
-      <label for="comments">Comments</label><br>
-      <textarea name="comments" id="comments" cols="60" rows="7"></textarea><br>
-      <input type="submit" value="Send Form" class="btn">
+      <label ><b>Textarea</b></label><br>
+      <textarea name="textarea" cols="60" rows="7"></textarea><br><br>
+      <input type="submit" value="button" class="btn"><br><Br>
 
-  </fieldset>
-</form>
+     <pre rel="Code #4"><code>
+      &lt;input type="text" cols="60" placeholder="sample textbox">
 
-    <h2 class="well">Elements</h2>
+      &lt;select>
+        &lt;optgroup label="Please choose your option">
+        &lt;option value="option1">option1&lt;/option>
+        &lt;option value="option2">option2&lt;/option>
+      &lt;/select>
+
+      &lt;input type="radio" name='radio'>
+      &lt;label for="radio2">radio2&lt;/label>
+
+      &lt;input type="checkbox" name="checkbox">
+      &lt;label for="check1">check1&lt;/label>
+
+      &lt;textarea name="textarea" cols="60" rows="7">&lt;/textarea>
+
+      &lt;input type="submit" value="button" class="btn">
+    
+    </code></pre>
+
+    <h2 class="well ">Elements</h2>
     <div class="well">.well</div>
-    <div class="box margintop-20">.box</div>
+    <div class="box margintop-20">.box</div><br>
 
+     <pre rel="Code #5"><code>  
+    &lt;div class="well">.well&lt;/div>
+    &lt;div class="box margintop-20">.box&lt;/div>
+    </code></pre>
     <h2 class="well">Colors</h2>
     <h3 class="box">Backgrounds</h3>
     <div class="row">
-      <div class="bcol-20"> <div class="bg bg-dp-lt-red">.bg-dp-lt-red</div></div>
-      <div class="bcol-20"> <div class="bg bg-lt-red">.bg-lt-red</div></div>
-      <div class="bcol-20"> <div class="bg bg-red">.bg-red</div></div>
-      <div class="bcol-20"> <div class="bg bg-dk-red">.bg-dk-red</div></div>
-      <div class="bcol-20"> <div class="bg bg-dp-dk-red">.bg-dp-dk-red</div></div>
+      <div class="bcol-20"> 
+      <div class="bg bg-dp-lt-red"><b>Deep Light Red</b><br>bg-dp-lt-red <br> #EC403A</div>
+      </div>
+      <div class="bcol-20">
+      <div class="bg bg-lt-red"><b>Light Red</b><br>bg-lt-red <br> #E2312B</div>
+      </div>
+      <div class="bcol-20">
+      <div class="bg bg-red"><b>Red</b><br>bg-red <br> #D91E18</div>
+      </div>
+      <div class="bcol-20">
+      <div class="bg bg-dk-red"><b>Dark Red</b><br>bg-dk-red <br> #CC1D17 </div>
+      </div>
+      <div class="bcol-20"> 
+      <div class="bg bg-dp-dk-red"><b>Deep Dark Red</b><br>bg-dp-dk-red <br> #BF1B16</div>
+      </div>
     </div>
     <div class="row">
-      <div class="bcol-20"> <div class="bg bg-dp-lt-blue">.bg-dp-lt-blue</div></div>
-      <div class="bcol-20"> <div class="bg bg-lt-blue">.bg-lt-blue</div></div>
-      <div class="bcol-20"> <div class="bg bg-blue">.bg-blue</div></div>
-      <div class="bcol-20"> <div class="bg bg-dk-blue">.bg-dk-blue</div></div>
-      <div class="bcol-20"> <div class="bg bg-dp-dk-blue">.bg-dp-dk-blue</div></div>
+      <div class="bcol-20"> 
+      <div class="bg bg-dp-lt-blue"><b>Deep Light Blue</b><br>bg-dp-lt-blue <br>#5F9DEC</div></div>
+      <div class="bcol-20">
+      <div class="bg bg-lt-blue"><b>Light Blue</b><br>bg-lt-blue<br>#5191E2</div></div>
+      <div class="bcol-20"> 
+      <div class="bg bg-blue"><b>Blue</b><br>bg-blue<br>#4183D7</div></div>
+      <div class="bcol-20"> 
+      <div class="bg bg-dk-blue"><b>Dark Blue</b><br>bg-dk-blue<br>#3577CB</div></div>
+      <div class="bcol-20"> 
+      <div class="bg bg-dp-dk-blue"><b>Deep Dark Blue</b><br>bg-dp-dk-blue<br>#296ABC</div></div>
     </div>
     <div class="row">
       <div class="bcol-20"> <div class="bg bg-dp-lt-green">.bg-dp-lt-green</div></div>
@@ -243,7 +324,7 @@
       <div class="bcol-20"> <div class="bg bg-dp-dk-black">.bg-dp-dk-black</div></div>
     </div>
   <div class="row">
-      <div class="bcol-20"> <div class="bg bg-dp-lt-white">.bg-dp-lt-white</div></div>
+      <div class="bcol-20"> <div class="bg bg-dp-lt-white tx-black"><b>.bg-dp-lt-white</b></div></div>
       <div class="bcol-20"> <div class="bg bg-lt-white">.bg-lt-white</div></div>
       <div class="bcol-20"> <div class="bg bg-white">.bg-white</div></div>
       <div class="bcol-20"> <div class="bg bg-dk-white">.bg-dk-white</div></div>
@@ -330,8 +411,14 @@
       <div class="bcol-20"> <div class="tx tx-dp-dk-white">.tx-dp-dk-white</div></div>
     </div>
   <hr>
-  <div class="footer">
-      a packetcode production
+ 
+  </div>
+
+   <div class="footer bg-white">
+   <div class="container">
+      a <a href="http://packetcode.com">packetcode</a> production<br>
+      <small>developed by <a href="https://twitter.com/shaadomanthra">@shaadomanthra</a> out of frustration</small>
+
   </div>
   </div>
 

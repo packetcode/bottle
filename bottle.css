@@ -30,15 +30,8 @@
 	.table tbody tr:hover td{ color:#6C7A89;}
 
 /* Elements */
-	.well{ background: #F8f8f8; padding: 10px; border-radius: 10px; border-bottom: 5px solid #EEEEEE;border-right:2px solid #EEEEEE;}	
+	.well{ background: #F8f8f8; margin-bottom:20px;padding: 10px; border-radius: 10px; border-bottom: 5px solid #EEEEEE;border-right:2px solid #EEEEEE;}	
 	.box{ border:2px solid #EEEEEE; border-radius: 5px; padding: 10px;}
-
-/* button */
-	.btn{
-	    padding: 8px 15px;color: #FFF;background: #3498db;	
-	    -webkit-border-radius: 4px;-moz-border-radius: 4px;border-radius: 4px;
-	    cursor: pointer;border: solid 0px transparent; }
-	.btn:hover { opacity:0.9;}
 
 /* input */
 	fieldset{ border: 2px solid #EEEEEE;padding: 20px; }
@@ -46,10 +39,18 @@
 	input[type="password"],
 	textarea,
 	select{
-	border:0; padding:8px; font-size:1em; color:#34495e; border:solid 1px #ccc; margin:5px 0 5px; 
+  	font-size:100%;border:0; padding:8px; font-size:1em; color:#34495e; border:solid 1px #ccc; margin:5px 0 5px; 
+  	-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;
 	-webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px;}
 	textarea{ font-size: 1.4em;}
 
+
+/* button */
+	.btn{
+	    padding: 8px 15px;color: #FFF;background: #3498db;	
+	    -webkit-border-radius: 4px;-moz-border-radius: 4px;border-radius: 4px;
+	    cursor: pointer;border: solid 0px transparent; }
+	.btn:hover { opacity:0.9;}
 
 /*grid */
 
