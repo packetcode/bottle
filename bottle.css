@@ -1,7 +1,14 @@
+/* BOTTLE CSS FRAMEOWRK
+ * Developer : Krishan Teja G S;
+ * Webpage : http://packetcode.github.io/bottle/;
+ * Company : Packetcode (www.packetcode.com);
+ * Creation : 21st Nov 2014;
+ * Licence : GNU GPL V2;
+*/
 
 /* Body */
 	body { background: #fff; color: #444; margin:0px;
-			font: 14px/21px;font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;}
+		font: 14px/21px;font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;}
 
 /* Typography */
 	p { margin: 0 0 20px 0; }
