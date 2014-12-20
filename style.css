@@ -1,6 +1,9 @@
 .header{
-	height:150px;
+	padding: 20px;
 	text-align: center;
+	background: #fcf8e9;
+	border-bottom: 5px solid #f7f1dd;
+	margin-bottom: 30px;
 }
 .header-text{
 	text-align: center;
@@ -109,4 +112,7 @@ pre:after {
 }
 code{
 	word-wrap: break-word;
+}
+.well{
+	padding-left: 20px;
 }
